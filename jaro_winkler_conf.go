@@ -1,6 +1,6 @@
 package strsim
 
-import "github.com/shijiaoliang/similarity"
+import "github.com/shijiaoliang/strsim/similarity"
 
 // JaroWinkler ngram 是筛子系数需要用的一个值
 func JaroWinkler(matchWindow ...int) OptionFunc {
