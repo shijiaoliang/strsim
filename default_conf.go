@@ -1,7 +1,7 @@
 package strsim
 
 import (
-	"github.com/shijiaoliang/similarity"
+	"github.com/shijiaoliang/strsim/similarity"
 )
 
 func Default() OptionFunc {
