@@ -1,4 +1,4 @@
-module strsim
+module github.com/shijiaoliang/strsim
 
 go 1.18
 
