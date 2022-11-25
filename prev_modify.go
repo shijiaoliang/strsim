@@ -1,8 +1,8 @@
 package strsim
 
 import (
-	"github.com/shijiaoliang/similarity"
 	"strings"
+	"github.com/shijiaoliang/strsim/similarity"
 )
 
 const (
