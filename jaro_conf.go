@@ -1,7 +1,7 @@
 package strsim
 
 import (
-	"github.com/shijiaoliang/similarity"
+	"github.com/shijiaoliang/strsim/similarity"
 )
 
 // Jaro ngram 是筛子系数需要用的一个值
