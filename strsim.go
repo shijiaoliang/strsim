@@ -1,7 +1,7 @@
 package strsim
 
 import (
-	"github.com/shijiaoliang/similarity"
+	"github.com/shijiaoliang/strsim/similarity"
 )
 
 // Compare 比较两个字符串相似度
