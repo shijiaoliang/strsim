@@ -1,6 +1,6 @@
 package strsim
 
-import "github.com/shijiaoliang/similarity"
+import "github.com/shijiaoliang/strsim/similarity"
 
 func Simhash() OptionFunc {
 	return OptionFunc(func(o *option) {
