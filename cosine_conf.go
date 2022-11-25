@@ -1,6 +1,6 @@
 package strsim
 
-import "github.com/shijiaoliang/similarity"
+import "github.com/shijiaoliang/strsim/similarity"
 
 // Cosine CosineConf is a configuration struct for Cosine similarity.
 func Cosine() OptionFunc {
