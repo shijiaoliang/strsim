@@ -25,6 +25,8 @@ func FindBestMatch(s string, targets []string, opts ...Option) *similarity.Match
 }
 
 // IsMatch 是否存在相似度大于等于score的文本
-func IsMatch(s string, targets []string, score float64, opts ...Option) bool {
-	return isMatch(s, targets, score, opts...)
+func IsMatch(s string, targets []string, score float64, opts ...Option) (bool, string, float64) {
+	isMatch, str, compareScore := isMatch(s, targets, score, opts...)
+
+	return isMatch, str, compareScore
 }

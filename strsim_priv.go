@@ -48,7 +48,7 @@ func findBestMatch(s string, targets []string, opts ...Option) *similarity.Match
 	return &similarity.MatchResult{AllResult: match, Match: match[bestIndex], BestIndex: bestIndex}
 }
 
-func isMatch(s string, targets []string, score float64, opts ...Option) bool {
+func isMatch(s string, targets []string, score float64, opts ...Option) (isMatch bool, str string, compareScore float64) {
 	var opt option
 	opt.fillOption(opts...)
 
@@ -56,9 +56,9 @@ func isMatch(s string, targets []string, score float64, opts ...Option) bool {
 		compareScore := compare(s, s2, &opt)
 
 		if compareScore >= score {
-			return true
+			return true, s2, compareScore
 		}
 	}
 
-	return false
+	return false, "", 0
 }

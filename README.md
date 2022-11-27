@@ -7,16 +7,11 @@ from !(https://github.com/antlabs/strsim)
 ![strsim.png](https://github.com/guonaihong/images/blob/master/strsim/strsim.png?raw=true)
 
 
-
 ## 使用方式
 
 ```go
 go get -u github.com/shijiaoliang/strsim
 ```
-
-
-
-
 
 ## 功能
 * 可以忽略空白字符
@@ -94,4 +89,3 @@ strsim.Compare("abc", "ab", strsim.Cosine())
 ```go
 strsim.Compare("abc", "ab", strsim.Simhash())
 ```
-
